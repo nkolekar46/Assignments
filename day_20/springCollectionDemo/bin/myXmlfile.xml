@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- <bean id="emp" class="com.demoSpring.Employee" scope="prototype"> -->	
+<!--  	<constructor-arg name="empid" value="21"></constructor-arg>-->
+<!--  		<constructor-arg name="ename" value="Rajesh"></constructor-arg>-->
+<!--  			<constructor-arg name="salary" value="45000"></constructor-arg>-->
+<!--	</bean> -->
+	  
+		<bean id="emp1" class="com.demoSpring.Employee" scope="prototype">
+		<property name="empid" value="31"></property>
+				<property name="ename" value="Rocky"></property>
+						<property name="salary" value="31000"></property>
+	</bean>
+	
+		<bean id="emp2" class="com.demoSpring.Employee" scope="prototype">
+		<property name="empid" value="32"></property>
+				<property name="ename" value="Raj"></property>
+						<property name="salary" value="43000"></property>
+	</bean>
+	<bean id="addr" class="com.demoSpring.Address"></bean>
+
+
+</beans>
